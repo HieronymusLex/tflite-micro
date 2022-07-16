@@ -104,7 +104,7 @@ def build_net(args, seq_length):
   elif args.model == "LSTM":
     model, model_path = build_lstm(seq_length)
   else:
-    print("Please input correct model name.(CNN  LSTM)")
+    raise ValueError("Please input correct model name.(CNN  LSTM)")
   return model, model_path
 
 
